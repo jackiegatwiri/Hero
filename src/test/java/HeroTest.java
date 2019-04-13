@@ -13,5 +13,18 @@ public class HeroTest {
         String expected = "Superman";
         assertEquals(expected,myHero.getName());
     }
+    @Test
+    public void getAge_getAgeForHeroes_int(){
+        Hero myHero = new Hero("Superman", 45, "fly", "cryptonite");
+        int expected = 45;
+        assertEquals(expected,myHero.getAge());
+    }
+    @Test
+    public void getPower_getPowerForHeroes_String(){
+        Hero myHero = new Hero("Superman", 45, "fly", "cryptonite");
+        String expected = "fly";
+        assertEquals(expected,myHero.getPower());
+    }
+
 
 }
