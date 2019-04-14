@@ -1,4 +1,7 @@
 import org.junit.Test;
+
+import java.time.LocalDateTime;
+
 import static org.junit.Assert.*;
 
 public class HeroTest {
@@ -31,6 +34,25 @@ public class HeroTest {
         String expected = "cryptonite";
         assertEquals(expected,myHero.getWeakness());
     }
+    @Test
+    public void getCreatedAt_getTimeWhenAHeroIsCreated_today(){
+        Hero myHero = new Hero("Superman", 45, "fly", "cryptonite");
+        assertEquals(LocalDateTime.now().getDayOfWeek(), myHero.getCreatedAt().getDayOfWeek());
+    }
+    @Test
+    public void all_getAllInstancesOfTheClass_true(){
+        Hero myHero = new Hero("Superman", 45, "fly", "cryptonite");
+        Hero myHero2 = new Hero("Super", 55, "run", "cryptonite");
+        assertEquals(true,Hero.all().contains(myHero));
+        assertEquals(true, Hero.all().contains(myHero2));
+    }
+    @Test
+    public void clear_emptyTheArrayListToZero_0() {
+        Hero myHero = new Hero("Superman", 45, "fly", "cryptonite");
+        Hero.clear();
+        assertEquals(Hero.all().size(), 0);
+    }
+
 
 
 }

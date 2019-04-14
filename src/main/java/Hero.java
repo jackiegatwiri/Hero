@@ -1,3 +1,4 @@
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,6 +7,7 @@ public class Hero {
     private int mAge;
     private String mPower;
     private String mWeakness;
+    private LocalDateTime mCreatedAt;
     private int mId;
     private static List<Hero> instances = new ArrayList<>();
 
@@ -14,8 +16,9 @@ public class Hero {
         this.mAge = age;
         this.mPower = power;
         this.mWeakness = weakness;
+        mCreatedAt = LocalDateTime.now();
 
-         instances.add(this);
+         instances.add(this); //This logic resides in the constructor because the constructor is called every time we create a Task. This ensures every new Task will be included in instances.
 
     }
 
@@ -33,6 +36,9 @@ public class Hero {
 
     public String getWeakness() {
         return mWeakness;
+    }
+    public LocalDateTime getCreatedAt() {
+        return mCreatedAt;
     }
     public int getId(){
         return mId;
