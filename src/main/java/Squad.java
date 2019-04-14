@@ -6,11 +6,13 @@ public class Squad {
     private String mName;
     private static List<Squad> instances = new ArrayList<Squad>(); //list of category objects
     private int mid;
+    private List<Hero> mHeroes; // a certain squad will have a list of heroes
 
     public Squad(String name ){
         this.mName = name;
         instances.add(this);
         mid = instances.size();
+        mHeroes = new ArrayList<Hero>();
     }
     public String getName() {
         return mName;
@@ -26,6 +28,9 @@ public class Squad {
     }
     public static Squad find(int id){
         return instances.get(id -1);
+    }
+    public List<Hero> getHeroes(){
+        return mHeroes;
     }
 
 }

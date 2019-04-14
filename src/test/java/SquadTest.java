@@ -45,4 +45,10 @@ public class SquadTest {
         Squad secondSquad = new Squad("AntiHero");
         assertEquals(Squad.find(secondSquad.getId()), secondSquad);
     }
+    @Test
+    public void getHeroes_initiallyReturnsAnEmptyList_ArrayList(){
+        Squad.clear();
+        Squad testSquad = new Squad("Epic");
+        assertEquals(0, testSquad.getHeroes().size());
+    }
 }
