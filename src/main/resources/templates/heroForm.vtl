@@ -1,6 +1,6 @@
 <p>Fill in the blanks to add a new Hero: </p>
 
-<form action='/heroes' method='post'>
+<div action='/heroes' method='post'>
     <div class="form-group">
         <label for="name">Enter Name for your Hero</label>
         <input id="name" name="name" class="form-control" type="text">
@@ -9,9 +9,14 @@
         <label for="age">Enter your Hero's age</label>
         <input id="age" name="age" class="form-control" type="number">
     </div>
+
+
     <div class="form-group">
-        <label for="power">Enter Your Hero's Power</label>
-        <input id="power" name="power" class="form-control" type="text">
+        Select the appropriate power for your hero
+        <input type="radio"  name="power" value="flight"> Flight <br>
+        <input type="radio"  name="power" value="strength"> Enhanced Strength<br>
+        <input type="radio" name="power" value="technopathy"> Technopathy <br>
+        <input type="radio" name="power" value="invisibility"> Invisibility <br>
     </div>
     <div class="form-group">
         <label for="weakness">Enter your Hero's Weakness</label>
