@@ -15,7 +15,22 @@ public class App {
 
         get("/squads/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("template", "templates/squadForm.vtl");
+            model.put("template", "templates/squadForm.vtl"); //renders a form that a user fills for the new squad
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
+        post("/squads", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            String name = request.queryParams("name");
+            Squad newSquad = new Squad(name); //adds the new squad to the Squads.vtl then displays success form squadSuccess
+            model.put("template", "templates/squadSuccess.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
+        get("/squads", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            model.put("squads", Squad.all());
+            model.put("template", "templates/squads.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
