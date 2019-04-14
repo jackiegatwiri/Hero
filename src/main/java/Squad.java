@@ -24,5 +24,8 @@ public class Squad {
     public int getId(){
         return mid;
     }
+    public static Squad find(int id){
+        return instances.get(id -1);
+    }
 
 }

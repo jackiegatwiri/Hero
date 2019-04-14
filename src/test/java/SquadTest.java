@@ -26,7 +26,7 @@ public class SquadTest {
 
 
     @Test
-    public void Squad_clearSquadFromList_0(){
+    public void Squad_clearSquadFromList_0(){ //see if clear works
         Squad testSquad = new Squad("Epic");
         Squad.clear();
         assertEquals(Squad.all().size(), 0);
@@ -36,7 +36,13 @@ public class SquadTest {
     @Test
     public void getId_instantiateWithName_1(){
         Squad.clear();
-        Squad testSquad = new Squad("Epic");
+        Squad testSquad = new Squad("Epic"); //clear all tests then test if Epic will have an id of 1
         assertEquals(1, testSquad.getId());
+    }
+    @Test
+    public void find_returnsSquadWithTheSameId_SecondSquad(){
+        Squad firstSquad = new Squad("Epic"); //find the squad using id
+        Squad secondSquad = new Squad("AntiHero");
+        assertEquals(Squad.find(secondSquad.getId()), secondSquad);
     }
 }
