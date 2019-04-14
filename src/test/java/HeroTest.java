@@ -52,7 +52,16 @@ public class HeroTest {
         Hero.clear();
         assertEquals(Hero.all().size(), 0);
     }
+    @Test
+    public void getId_heroesInstantiatesWithAnID_1() {
+        Hero.clear();
+        Hero myHero = new Hero("Superman", 45, "fly", "cryptonite");
+        assertEquals(1, myHero.getId());
+    }
+    @Test
+    public void find_returnsHeroWithSameId_myHero2(){
+        Hero myHero = new Hero("Superman", 45, "fly", "cryptonite");
+        Hero myHero2 = new Hero("Super", 55, "run", "cryptonite");
+        assertEquals(Hero.find(myHero2.getId()), myHero2);
 
-
-
-}
+}}

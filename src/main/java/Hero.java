@@ -17,8 +17,8 @@ public class Hero {
         this.mPower = power;
         this.mWeakness = weakness;
         mCreatedAt = LocalDateTime.now();
-
-         instances.add(this); //This logic resides in the constructor because the constructor is called every time we create a Task. This ensures every new Task will be included in instances.
+        instances.add(this); //This logic resides in the constructor because the constructor is called every time we create a Task. This ensures every new Task will be included in instances.
+        mId = instances.size();
 
     }
 
@@ -40,17 +40,20 @@ public class Hero {
     public LocalDateTime getCreatedAt() {
         return mCreatedAt;
     }
-    public int getId(){
-        return mId;
-    }
+
     public static List<Hero> all(){
         return instances;
     }
-    public static Hero find(int id) {
-        return instances.get(id - 1);
-    }
+
     public static void clear() {
         instances.clear();
+    }
+    public int getId()
+    {
+        return mId;
+    }
+    public static Hero find(int id) {
+        return instances.get(id-1);//So, if a method's functionality must access all instances of a class, like our find() method above, it needs to be declared static.
     }
 
 
