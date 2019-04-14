@@ -51,4 +51,11 @@ public class SquadTest {
         Squad testSquad = new Squad("Epic");
         assertEquals(0, testSquad.getHeroes().size());
     }
+    @Test
+    public void addHero_addsHeroToList_true(){
+        Squad testSquad = new Squad("Epic"); //find the squad using id
+        Hero testHero = new Hero("Superman", 45, "fly", "cryptonite");
+        testSquad.addHero(testHero);
+        assertTrue(testSquad.getHeroes().contains(testHero));
+    }
 }

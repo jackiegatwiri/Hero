@@ -26,11 +26,14 @@ public class Squad {
     public int getId(){
         return mid;
     }
-    public static Squad find(int id){
+    public static Squad find(int id){ //finds instancs of the Squd
         return instances.get(id -1);
     }
-    public List<Hero> getHeroes(){
+    public List<Hero> getHeroes(){ //returns Squad's list of heroes
         return mHeroes;
+    }
+    public void addHero(Hero hero){
+        mHeroes.add(hero); //a hero is added to the mHeroes property
     }
 
 }
