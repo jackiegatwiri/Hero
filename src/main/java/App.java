@@ -15,7 +15,7 @@ public class App {
 
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("heroes", request.session().attribute("heroes"));
+            model.put("heroes", request.session().attribute("heroes"));//adding into the session and displaying into the index.vtl
             model.put("template", "templates/index.vtl");
 
             return new ModelAndView(model, layout);

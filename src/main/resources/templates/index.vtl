@@ -1,12 +1,12 @@
 <h1>Hero list!</h1>
-#if ($heroes)
+#if ($heroes) // if my array list has heroes, then loop through it and display your heroes
 <ul>
     #foreach ($hero in $heroes)
     <li>$hero.getName()
         $hero.getAge()
         $hero.getPower()
         $hero.getWeakness()</li>
-
+#end
 </ul>
 #else
 <p>No heroes!</p>
