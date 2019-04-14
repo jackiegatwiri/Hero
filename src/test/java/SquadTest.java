@@ -23,4 +23,12 @@ public class SquadTest {
         assertEquals(true, Squad.all().contains(secondSquad));
         assertEquals(true, Squad.all().contains(thirdSquad));
     }
+
+
+    @Test
+    public void Squad_clearSquadFromList_0(){
+        Squad testSquad = new Squad("Epic");
+        Squad.clear();
+        assertEquals(Squad.all().size(), 0);
+    }
 }
