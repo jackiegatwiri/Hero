@@ -31,4 +31,12 @@ public class SquadTest {
         Squad.clear();
         assertEquals(Squad.all().size(), 0);
     }
+
+
+    @Test
+    public void getId_instantiateWithName_1(){
+        Squad.clear();
+        Squad testSquad = new Squad("Epic");
+        assertEquals(1, testSquad.getId());
+    }
 }

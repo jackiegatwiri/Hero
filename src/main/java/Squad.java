@@ -5,10 +5,12 @@ public class Squad {
 
     private String mName;
     private static List<Squad> instances = new ArrayList<Squad>(); //list of category objects
+    private int mid;
 
     public Squad(String name ){
         this.mName = name;
         instances.add(this);
+        mid = instances.size();
     }
     public String getName() {
         return mName;
@@ -18,6 +20,9 @@ public class Squad {
     }
     public static void clear(){
         instances.clear();
+    }
+    public int getId(){
+        return mid;
     }
 
 }
