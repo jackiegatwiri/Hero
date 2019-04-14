@@ -111,13 +111,8 @@
       <change beforePath="$PROJECT_DIR$/../../Angular/Quotes/src/tslint.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Angular/Quotes/tsconfig.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Angular/Quotes/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/heroForm.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/heroForm.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/heroes.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/heroes.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HeroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HeroTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SquadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SquadTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/index.html" afterDir="false" />
@@ -147,8 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="40" column="56" lean-forward="true" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+            <state relative-caret-position="344">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#482#498#0" expanded="true" />
@@ -157,6 +152,29 @@
                 <element signature="e#727#743#0" expanded="true" />
                 <element signature="e#2227#2243#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SquadTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#139#140#0" expanded="true" />
+                <element signature="e#183#184#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Squad.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -209,8 +227,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/HeroTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+            <state relative-caret-position="-2">
+              <caret line="43" column="68" lean-forward="true" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -218,11 +236,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Hero.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+            <state relative-caret-position="288">
+              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#626#627#0" expanded="true" />
@@ -239,7 +257,6 @@
                 <element signature="e#1029#1030#0" expanded="true" />
                 <element signature="e#1144#1145#0" expanded="true" />
                 <element signature="e#1177#1178#0" expanded="true" />
-                <element signature="e#1355#1356#0" expanded="true" />
                 <element signature="e#1381#1382#0" expanded="true" />
               </folding>
             </state>
@@ -265,20 +282,21 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/success.vtl" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/java/HeroTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/heroForm.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/heroes.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.vtl" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/hero.vtl" />
+        <option value="$PROJECT_DIR$/src/test/java/HeroTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hero.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SquadTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="845" />
+    <option name="x" value="833" />
     <option name="y" value="25" />
-    <option name="width" value="755" />
+    <option name="width" value="767" />
     <option name="height" value="875" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -422,17 +440,18 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="845" y="25" width="755" height="875" extended-state="4" />
+    <frame x="833" y="25" width="767" height="875" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.49788433" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.4965326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Build" weight="0.3297587" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -494,20 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Squad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SquadTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -529,16 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HeroTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -553,17 +548,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/heroes.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/heroForm.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/heroes.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -574,25 +569,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/HeroTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="40" column="56" lean-forward="true" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+        <state relative-caret-position="-2">
+          <caret line="43" column="68" lean-forward="true" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#482#498#0" expanded="true" />
-            <element signature="e#889#905#0" expanded="true" />
-            <element signature="e#1165#1181#0" expanded="true" />
-            <element signature="e#727#743#0" expanded="true" />
-            <element signature="e#2227#2243#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Hero.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+        <state relative-caret-position="288">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#626#627#0" expanded="true" />
@@ -609,8 +599,41 @@
             <element signature="e#1029#1030#0" expanded="true" />
             <element signature="e#1144#1145#0" expanded="true" />
             <element signature="e#1177#1178#0" expanded="true" />
-            <element signature="e#1355#1356#0" expanded="true" />
             <element signature="e#1381#1382#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#482#498#0" expanded="true" />
+            <element signature="e#889#905#0" expanded="true" />
+            <element signature="e#1165#1181#0" expanded="true" />
+            <element signature="e#727#743#0" expanded="true" />
+            <element signature="e#2227#2243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Squad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SquadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#183#184#0" expanded="true" />
           </folding>
         </state>
       </provider>

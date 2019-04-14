@@ -52,7 +52,7 @@ public class Hero {
     {
         return mId;
     }
-    public static Hero find(int id) {
+    public static Hero find(int id) { //this helps to locate an object or instance using the id
         return instances.get(id-1);//So, if a method's functionality must access all instances of a class, like our find() method above, it needs to be declared static.
     }
 
