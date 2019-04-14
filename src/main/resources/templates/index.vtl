@@ -1,11 +1,13 @@
 <h1>Hero list!</h1>
-#if ($hero)
-<p>Current hero:</p>
-<p>$hero.getName()
-    $hero.getAge()
-    $hero.getPower()
-    $hero.getWeakness()</p>
+#if ($heroes)
+<ul>
+    #foreach ($hero in $heroes)
+    <li>$hero.getName()
+        $hero.getAge()
+        $hero.getPower()
+        $hero.getWeakness()</li>
 
+</ul>
 #else
 <p>No heroes!</p>
 #end
