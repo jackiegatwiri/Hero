@@ -34,6 +34,14 @@ public class App {
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
+        get("/squads/:id", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            Squad squad = Squad.find(Integer.parseInt(request.params(":id")));
+            model.put("squad", squad);
+            model.put("template", "templates/squad.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
 //            model.put("heroes", request.session().attribute("heroes"));//adding into the session and displaying into the index.vtl
@@ -41,9 +49,11 @@ public class App {
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
-        get("heroes/new", (request, response) -> {
+        get("squads/:id/heroes/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("template", "templates/heroForm.vtl");
+            Squad squad = Squad.find(Integer.parseInt(request.params(":id")));
+            model.put("squad", squad);
+            model.put("template", "templates/squadHeroesForm.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
@@ -57,12 +67,16 @@ public class App {
 
         post("/heroes", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();//Remember, any extra information the template needs must be packaged in a HashMap named model
+            Squad squad = Squad.find(Integer.parseInt(request.queryParams("squadId")));
             String name = request.queryParams("name");
             String age = request.queryParams("age");
             String power = request.queryParams("power");
             String weakness = request.queryParams("weakness");
             Hero newHero = new Hero(name, Integer.parseInt(age), power, weakness);
-            model.put("template", "templates/success.vtl");
+
+            squad.addHero(newHero);
+            model.put("squad", squad);
+            model.put("template", "templates/squadHeroesSuccess.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
