@@ -13,6 +13,12 @@ public class App {
         String layout = "templates/layout.vtl";
         port(9000);
 
+        get("/squads/new", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            model.put("template", "templates/squadForm.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
 //            model.put("heroes", request.session().attribute("heroes"));//adding into the session and displaying into the index.vtl
