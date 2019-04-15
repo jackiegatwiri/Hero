@@ -1,13 +1,47 @@
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+</nav>
+
 <h1>$squad.getName() heroes:</h1>
 
-<ul>
-    #foreach($hero in $squad.getHeroes())
-    <li>$hero.getName()
-        $hero.getAge()
-        $hero.getPower()
-        $hero.getWeakness()</li>
-    #end
-</ul>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Power</th>
+        <th>Weakness</th>
+    </tr>
+<tr>
 
+    #foreach($hero in $squad.getHeroes())
+    <td>$hero.getName()</td>
+        <td>$hero.getAge()</td>
+        <td>$hero.getPower()</td>
+        <td>$hero.getWeakness()</td>
+
+    #end
+</tr>
+</table>
+
+
+<div class="list">
 <a href="/squads/$squad.getId()/heroes/new">Add a new hero</a>
-<a href="/squads">All squads</a>
+</div>
+
+<div class="list">
+<a href="/squads">All s quads</a>
+</div>

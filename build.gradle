@@ -4,8 +4,10 @@ apply plugin: 'application'
 
 group 'com.jackie.hero'
 version '1.0-SNAPSHOT'
-archivesBaseName = "hero"
+archivesBaseName = "Hero"
+applicationName = "Hero"
 mainClassName = "App"
+
 
 repositories {
     mavenCentral()
@@ -19,3 +21,5 @@ dependencies {
 }
 defaultTasks = ['clean']
 task stage(dependsOn: ['clean', 'installDist'])
+
+

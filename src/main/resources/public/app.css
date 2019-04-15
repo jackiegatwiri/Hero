@@ -1,0 +1,41 @@
+.backgroundImage {
+  background-image: url("https://wallpaperaccess.com/full/19701.jpg");
+  background-size: cover;
+  height: 762px;
+
+  background-repeat: no-repeat;
+}
+.welcome{
+text-align: center;
+  padding-top: 5em;
+  font-family: 'Doppio One', sans-serif;
+}
+.content {
+  padding: 4px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 762px;
+}
+th,
+tr,
+td{
+ margin: 2px solid white;
+ width: 10em;
+}
+.list{
+background-color: white;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 4em;
+  margin-left: 35%;
+  width: 30%;
+  border-radius
+}
+.list a {
+text-decoration:none;
+color:black;
+}
+

@@ -11,7 +11,15 @@ public class App {
     public static void main(String[] args) {
         staticFileLocation("/public");
         String layout = "templates/layout.vtl";
-        port(9000);
+        ProcessBuilder process = new ProcessBuilder();
+        Integer port;
+        if (process.environment().get("PORT") != null) {
+            port = Integer.parseInt(process.environment().get("PORT"));
+        } else {
+            port = 4567;
+        }
+
+        port(port);
 
         get("/squads/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
@@ -22,7 +30,9 @@ public class App {
         post("/squads", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             String name = request.queryParams("name");
-            Squad newSquad = new Squad(name); //adds the new squad to the Squads.vtl then displays success form squadSuccess
+            int size = Integer.parseInt(request.queryParams("size"));
+            String mission = request.queryParams("mission");
+            Squad newSquad = new Squad(name, size, mission); //adds the new squad to the Squads.vtl then displays success form squadSuccess
             model.put("template", "templates/squadSuccess.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
@@ -73,8 +83,21 @@ public class App {
             String power = request.queryParams("power");
             String weakness = request.queryParams("weakness");
             Hero newHero = new Hero(name, Integer.parseInt(age), power, weakness);
+//            squad.addHero(newHero);
 
-            squad.addHero(newHero);
+            if (Squad.heroAlreadyExists(newHero)) {
+                String heroExists = "Hero " + name + " already exists in a squad";
+                model.put("heroExists", heroExists);
+            }
+            else if (squad.getHeroes().size() >= squad.getSize()) {
+                String sizeMet = "Squad size already met";
+                model.put("sizeMet", sizeMet);
+            }
+            else{
+                squad.addHero(newHero);
+            }
+
+
             model.put("squad", squad);
             model.put("template", "templates/squadHeroesSuccess.vtl");
             return new ModelAndView(model, layout);

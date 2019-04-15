@@ -1,9 +1,37 @@
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+</nav>
 <h1>Add a new squad for your heroes</h1>
 
 <p>Fill in the form to add your squad </p>
 
 <form action="/squads" method="post">
-    <label for="name">Squad name</label>
-    <input id="name" name="name" type="text">
+    <div class="form-group">
+        <label for="name">Enter the name of the squad</label>
+        <input id="name" name="name" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="size">Enter the name of the squad</label>
+        <input id="size" name="size" class="form-control" type="number">
+    </div>
+    <div class="form-group">
+        <label for="mission">Enter the name of the squad</label>
+        <input id="mission" name="mission" class="form-control" type="text">
+    </div>
+
     <button type="submit" class="btn btn-success">Add Squad</button>
 </form>

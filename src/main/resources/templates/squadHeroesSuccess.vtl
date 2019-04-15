@@ -1,5 +1,39 @@
-<h1>Success!</h1>
 
-Your hero has been saved to the $squad.getName() category.
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+</nav>
 
-<a href="/squads">View available squads</a>
+
+    #if ($heroExists)
+    <h2 class="display-3">Failed!</h2>
+    <br>
+    Your hero could not be saved. $heroExists.
+    #else
+    #if($sizeMet)
+    <h2 class="display-3">Failed!</h2>
+    <br>
+    Your hero could not be saved. $sizeMet.
+    #else
+    <h2 class="display-3">Success!</h2>
+    <br>
+    Your hero has been saved to the $squad.getName() squad.
+    #end
+    #end
+    <br><br>
+    <div class="list">
+    <a href="/squads" class="btn btn-primary">View squads</a>
+
+</div>
