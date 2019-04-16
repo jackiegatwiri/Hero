@@ -111,6 +111,8 @@
       <change beforePath="$PROJECT_DIR$/../../Angular/Quotes/src/tslint.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Angular/Quotes/tsconfig.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Angular/Quotes/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Moringa-school-projects/Pig-Dice/index.html" afterDir="false" />
@@ -396,16 +398,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.28244787" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.28244787" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3297587" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="2" weight="0.3297587" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.3297587" />

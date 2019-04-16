@@ -3,10 +3,10 @@
 ```
 This is a spark application where one can add his favorite hero in the squad category. A user needs to provide a squad which will contain all his heroes and provide the name, age, power and weakness.
 
-<img src="https://i.ibb.co/nrYvf7V/Screenshot-from-2019-04-16-10-22-28.png" width=100%>
-<img src="https://i.ibb.co/XVT3hKC/Screenshot-from-2019-04-16-10-22-40.png" width=100%>
-<img src="https://i.ibb.co/7rdRdq8/Screenshot-from-2019-04-16-10-22-20.png" width=100%>
-
+![](screenshot/s1.png)
+![](screenshot/s2.png)
+![](screenshot/s3.png)
+```
 ## Contributors
 ```
 The contributors of this project were:
