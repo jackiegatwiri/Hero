@@ -96,6 +96,7 @@ public class App {
             else{
                 squad.addHero(newHero);
             }
+            request.session().attribute("hero", newHero);
 
 
             model.put("squad", squad);
