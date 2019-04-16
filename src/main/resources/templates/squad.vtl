@@ -16,6 +16,8 @@
     </div>
 </nav>
 
+#if ($squad)
+
 <h1>$squad.getName() heroes:</h1>
 
 <table>
@@ -33,6 +35,9 @@
         <td>$hero.getPower()</td>
         <td>$hero.getWeakness()</td>
 
+    #end
+    #else
+    <em><p>Oops! We can't seem to find that Category.</p></em>
     #end
 </tr>
 </table>
