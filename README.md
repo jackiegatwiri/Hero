@@ -1,11 +1,15 @@
 # Hero Squad
 ## Description
-```
-This is a spark application where one can add his favorite hero in the squad category. A user needs to provide a squad which will contain all his heroes and provide the name, age, power and weakness.```
 
 ![](screenshot/s1.png)
 ![](screenshot/s2.png)
 ![](screenshot/s3.png)
+
+
+```
+This is a spark application where one can add his favorite hero in the squad category. A user needs to provide a squad which will contain all his heroes and provide the name, age, power and weakness.```
+
+
 
 ## Contributors
 ```
